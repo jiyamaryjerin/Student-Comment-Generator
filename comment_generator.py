@@ -54,7 +54,7 @@ if sheet.max_row == 1:
 
 import requests
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def query_mistral(prompt):
