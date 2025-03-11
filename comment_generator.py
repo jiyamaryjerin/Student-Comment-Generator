@@ -43,7 +43,7 @@ if "workbook" not in st.session_state:
     st.session_state["workbook"] = Workbook()
     st.session_state["file_path"] = f"student_comments_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
 
-# ✅ Get the active workbook & sheet
+
 workbook = st.session_state["workbook"]
 sheet = workbook.active
 
@@ -135,3 +135,4 @@ with col2:
             file_name="student_comments.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
+st.footer("Jiya Mary Jerin creation")
