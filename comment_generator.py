@@ -114,7 +114,8 @@ with col2:
         comment_text = query_mistral(prompt)
         #st.write(comment_text)
         st.write(comment_text)
-
+        st.write()
+        st.write("This is machine generated response. Please review before use.")
         
         next_row = sheet.max_row + 1
         sheet.cell(row=next_row, column=1, value=name)
@@ -145,13 +146,14 @@ st.markdown(
         width: 100%;
         background-color: #f1f1f1;
         color: black;
+        transparency:70%;
         text-align: center;
         padding: 10px;
         font-size: 14px;
     }
     </style>
     <div class="footer">
-        Developed by Jiya Mary Jerin | For assistance/support reach out to jiyamaryjerin04@gmail.com
+        Developed by Jiya Mary Jerin | For assistance/support reach out to <a href="mailto:jiyamaryjerin04@gmail.com">jiyamaryjerin04@gmail.com</a>
     </div>
     """,
     unsafe_allow_html=True
