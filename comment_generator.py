@@ -135,4 +135,24 @@ with col2:
             file_name="student_comments.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
-st.footer("Jiya Mary Jerin creation")
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+    </style>
+    <div class="footer">
+        Developed by Jiya Mary Jerin | For assistance/support reach out to jiyamaryjerin04@gmail.com
+    </div>
+    """,
+    unsafe_allow_html=True
+)
