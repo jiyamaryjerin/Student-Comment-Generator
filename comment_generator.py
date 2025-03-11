@@ -39,15 +39,13 @@ with open('./stylesheet.css') as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-if os.path.exists(file_path):
-    workbook = load_workbook(file_path)
-else:
-    workbook = Workbook()
+if "workbook" not in st.session_state:
+    st.session_state["workbook"] = Workbook()
+    st.session_state["file_path"] = f"student_comments_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
 
+# ✅ Get the active workbook & sheet
+workbook = st.session_state["workbook"]
 sheet = workbook.active
-for row in worksheet.iter_rows():
-    for cell in row:
-        cell.value = None
 
 if sheet.max_row == 1:
     sheet["A1"] = "Student Comments"
