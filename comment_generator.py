@@ -115,7 +115,19 @@ with col2:
         #st.write(comment_text)
         st.write(comment_text)
         st.write()
-        st.write("This is machine generated response. Please review before use.")
+        st.markdown("""
+    <style>
+    .disclaimer {
+        color: black;
+        text-align: center;
+        font-size: 10px;
+    }
+    </style>
+    <p class="footer">
+        <i>Designed and developed by Jiya Mary Jerin | For assistance/support reach out to jiyamaryjerin04@gmail.com</i>
+    </p>
+    """,
+    unsafe_allow_html=True"This is machine generated response. Please review before use.")
         
         next_row = sheet.max_row + 1
         sheet.cell(row=next_row, column=1, value=name)
@@ -146,14 +158,14 @@ st.markdown(
         width: 100%;
         background-color: #f1f1f1;
         color: black;
-        transparency:70%;
+        opacity:30%;
         text-align: center;
         padding: 10px;
         font-size: 14px;
     }
     </style>
     <div class="footer">
-        Developed by Jiya Mary Jerin | For assistance/support reach out to <a href="mailto:jiyamaryjerin04@gmail.com">jiyamaryjerin04@gmail.com</a>
+        Designed and developed by Jiya Mary Jerin | For assistance/support reach out to jiyamaryjerin04@gmail.com
     </div>
     """,
     unsafe_allow_html=True
