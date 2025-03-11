@@ -1,0 +1,28 @@
+.st-key-main{
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 25px;
+    width: 105%;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    opacity:90%;
+}
+.title {
+    color: black;
+    font-size: 45px !important;
+    font-family: 'Goudy Old Style';
+    font-weight: bold;
+    text-align: center;
+}
+/* styles.css */
+div[data-baseweb="input"] input {
+    font-size: 20px !important;  
+    font-family: 'Goudy Old Style' !important; 
+    color: black !important; 
+    background-color: #f9f9f9 !important; 
+    border: 2px solid #BA9E92 !important; 
+    border-radius: 5px !important; 
+    padding: 10px !important; 
+}
