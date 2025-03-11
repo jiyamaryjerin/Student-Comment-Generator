@@ -45,7 +45,9 @@ else:
     workbook = Workbook()
 
 sheet = workbook.active
-
+for row in worksheet.iter_rows():
+    for cell in row:
+        cell.value = None
 
 if sheet.max_row == 1:
     sheet["A1"] = "Student Comments"
@@ -70,20 +72,12 @@ def query_mistral(prompt):
     
     try:
         data = response.json()  # Convert response to dictionary
-        print("Full API Response:", data)  # Debugging
-
-        # ✅ Check if response contains an error
+        print("Full API Response:", data)  
         if "error" in data:
             return f"API Error: {data['error']}"
-
-        # ✅ Check if 'choices' exists
         if "choices" not in data or not isinstance(data["choices"], list) or len(data["choices"]) == 0:
             return f"Error: 'choices' key missing or empty. Response: {data}"
-
-        # ✅ Extract first choice safely
         first_choice = data["choices"][0]
-
-        # ✅ Check if 'message' and 'content' exist
         if "message" not in first_choice or "content" not in first_choice["message"]:
             return f"Error: 'message' or 'content' key missing. Response: {data}"
 
