@@ -124,10 +124,10 @@ with col2:
     }
     </style>
     <p class="footer">
-        <i>Designed and developed by Jiya Mary Jerin | For assistance/support reach out to jiyamaryjerin04@gmail.com</i>
+        <i>This is machine generated response. Please review before use.</i>
     </p>
     """,
-    unsafe_allow_html=True,"This is machine generated response. Please review before use.")
+    unsafe_allow_html=True)
         
         next_row = sheet.max_row + 1
         sheet.cell(row=next_row, column=1, value=name)
