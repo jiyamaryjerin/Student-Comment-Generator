@@ -67,7 +67,7 @@ def query_mistral(prompt):
         "messages": [{"role": "user", "content": prompt}]
     }
     response = requests.post(OPENROUTER_API_URL, json=payload, headers=headers)
-    return choice["message"]["content"]
+    return choices["message"]["content"]
 
 
 
