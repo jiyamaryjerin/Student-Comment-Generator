@@ -159,7 +159,7 @@ st.markdown(
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, 1)
+        background-color: rgba(255, 255, 255, 0.6)!important;
         color: black;
         text-align: center;
         padding: 10px;
