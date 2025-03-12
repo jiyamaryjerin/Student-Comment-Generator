@@ -10,7 +10,7 @@ from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 file_path = f"student_comments.xlsx"
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title='Student Comment Generator', page_icon = 📝,layout="wide")
 
 
 def get_base64(bin_file):
@@ -156,7 +156,7 @@ st.markdown(
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.3)
+        background-color: rgba(255, 255, 255, 0.6)
         color: black;
         text-align: center;
         padding: 10px;
