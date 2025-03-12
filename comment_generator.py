@@ -10,7 +10,7 @@ from datetime import datetime
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 file_path = f"student_comments.xlsx"
 
-st.set_page_config(page_title='Student Comment Generator', page_icon = 📝,layout="wide")
+st.set_page_config(page_title='Student Comment Generator', page_icon = "📝",layout="wide")
 
 
 def get_base64(bin_file):
@@ -54,7 +54,10 @@ if sheet.max_row == 1:
 
 import requests
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+
+if not API_KEY:
+    raise ValueError("API key not found! Make sure it's set in Render's environment variables.")
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def query_mistral(prompt):
