@@ -123,7 +123,7 @@ with col2:
         font-size: 10px;
     }
     </style>
-    <p class="footer">
+    <p class="disclaimer">
         <i>This is machine generated response. Please review before use.</i>
     </p>
     """,
@@ -156,9 +156,8 @@ st.markdown(
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #f1f1f1;
+        background-color: rgba(255, 255, 255, 0.3)
         color: black;
-        opacity:30%;
         text-align: center;
         padding: 10px;
         font-size: 14px;
