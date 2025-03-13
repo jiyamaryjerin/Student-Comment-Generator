@@ -169,7 +169,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        Designed and developed by Jiya Mary Jerin  |  For assistance/support reach out to jiyamaryjerin04@gmail.com
+        Designed and developed by Jiya Mary Jerin | For assistance/support reach out to jiyamaryjerin04@gmail.com
     </div>
     """,
     unsafe_allow_html=True
