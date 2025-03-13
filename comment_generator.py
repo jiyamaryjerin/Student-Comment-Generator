@@ -97,6 +97,7 @@ with col1:
             st.markdown('<p class="title">Student Comment Generator</p>', unsafe_allow_html=True)
             grade = st.text_input("Enter grade : ")
             name = st.text_input("Enter name : ")
+            gender = st.text_input("Enter gender : ")
             strength = st.text_input("Enter strengths : ")
             weakness = st.text_input("Enter weakness : ")
             col3, col4 = st.columns([1, 1])
@@ -111,6 +112,7 @@ with col2:
     if submit:
         prompt = (
             f"Give a {style} progress card comment in {size} for a student named {name} "
+            f"The student is a {gender}"
             f"whose strengths include {strength}. Weaknesses include {weakness}. "
             "Make it sound positive. Write in third person. Do not add any emojis."
         )
@@ -127,7 +129,7 @@ with col2:
     }
     </style>
     <p class="disclaimer">
-        <i>This is machine generated response. Please review before use.</i>
+        <i>**This is a machine generated response using AI. Please review before use**</i>
     </p>
     """,
     unsafe_allow_html=True)
