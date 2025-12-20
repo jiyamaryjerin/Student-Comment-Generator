@@ -283,7 +283,7 @@ if sheet.max_row == 1:
     sheet["A3"] = "Name"
     sheet["B3"] = "Comment"
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 
 if not OPENROUTER_API_KEY:
     st.error("⚠️ API key not found! Please check your .env file.")
@@ -380,4 +380,5 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
