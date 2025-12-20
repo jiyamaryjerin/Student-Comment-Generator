@@ -21,7 +21,7 @@ st.set_page_config(page_title='Student Comment Generator', page_icon="📝", lay
 
 # Admin email list - add admin emails here
 ADMIN_EMAILS = [
-    "jiyamaryjerin04@gmail.com",
+    "jiyakuttan@gmail.com",
     "admin@example.com"
 ]
 
@@ -380,5 +380,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
