@@ -11,7 +11,7 @@ import requests
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
+#load_dotenv()
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 file_path = f"student_comments.xlsx"
@@ -380,3 +380,4 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
