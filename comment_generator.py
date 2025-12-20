@@ -27,9 +27,9 @@ OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # ===================== ENV =====================
 
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-SUPABASE_URL = os.getenv("SUPABASE_URL")
-SUPABASE_KEY = os.getenv("SUPABASE_SERVICE_KEY")
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+SUPABASE_URL = os.environ.get("SUPABASE_URL")
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY")
 
 if not all([OPENROUTER_API_KEY, SUPABASE_URL, SUPABASE_KEY]):
     st.error("❌ Missing environment variables. Please configure OPENROUTER_API_KEY, SUPABASE_URL, and SUPABASE_SERVICE_KEY")
