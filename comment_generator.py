@@ -118,7 +118,7 @@ def query_mistral(prompt):
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "mistralai/mistral-small",
+        "model": "mistralai/mixtral-8x7b-instruct",
         "messages": [{"role": "user", "content": prompt}]
     }
     
@@ -400,6 +400,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
